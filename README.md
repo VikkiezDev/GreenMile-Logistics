@@ -4,6 +4,16 @@ Over the last 3 years (2022–2024), fuel prices spiked dramatically, driver tur
 ## Executive Problem Statement: The Fleet Profitability & Efficiency Mandate
 > "Greenmile Logistics is seeing widening variance in route profitability and fleet efficiency. Identify the core drivers of margin leakage across our route network, evaluate driver and equipment performance, and provide actionable recommendations to optimize our Cost Per Mile (CPM) and On-Time Delivery (OTD) rates."
 
+## Core Business Requirements:
+1. Route & Customer Profitability Analysis
+    - Goal: Determine which city-pair routes and customer accounts generate high revenue versus those costing us money due to excessive fuel consumption or low rates.
+2. Cost Per Mile (CPM) & Fuel Efficiency Breakdown
+    - Goal: Dissect our total operating costs across fuel purchases, maintenance expenses, and driver pay to calculate our true operational CPM.
+3. Fleet Utilization & Maintenance Risk
+    - Goal: Evaluate how efficiently our 120 trucks and 180 trailers are utilized versus time spent sitting idle or in service bays.
+4. Driver Performance & Operational Quality Scorecard
+    - Goal: Rank driver performance across safety, delivery timeliness, and fuel economy to reward top performers and flag high-risk accounts.
+
 ## Repository Structure:
 ``` plaintext
 GreenMile-Logistics/
