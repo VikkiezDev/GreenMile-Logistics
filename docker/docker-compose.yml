@@ -7,13 +7,11 @@ services:
     restart: always
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=YourStrongPassw0rd!
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
       - MSSQL_PID=Developer
     ports:
-      # MS SQL default port is 1433
-      - "1433:1433"
+      - "${MSSQL_PORT}:1433"
     volumes:
-      # Persists your database MDF/LDF files
       - mssqldata:/var/opt/mssql/data
 
 volumes:
