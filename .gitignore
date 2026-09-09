@@ -6,3 +6,6 @@ docker/.env
 
 # Ignore Power BI temporary cache
 *.tmp
+
+# Ignore VS Code Settings
+.vscode/settings.json
