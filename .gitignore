@@ -1,0 +1,8 @@
+# Ignore raw data files to keep git repository light
+data/dataset/*
+
+# Ignore Docker volume persistent storage
+docker/pgdata/
+
+# Ignore Power BI temporary cache
+*.tmp
