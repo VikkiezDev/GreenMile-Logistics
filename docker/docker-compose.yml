@@ -4,6 +4,7 @@ services:
   mssql-db:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: local_mssql
+    user: "0:0"
     restart: always
     environment:
       - ACCEPT_EULA=Y
