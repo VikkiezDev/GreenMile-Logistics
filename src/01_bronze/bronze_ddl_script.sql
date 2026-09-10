@@ -1,8 +1,3 @@
--- exec sp_databases;
-
--- use greenmile_db;
--- select name from sys.schemas;
-
 -- Create a new table called 'drivers' in schema 'bronze'
 -- Drop the table if it already exists
 IF OBJECT_ID('bronze.drivers', 'U') IS NOT NULL
