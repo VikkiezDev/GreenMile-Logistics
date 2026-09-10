@@ -1,3 +1,28 @@
+-- SET NOCOUNT ON;
+-- GO
+
+-- -- 1. Drop all tables in the bronze schema
+-- IF OBJECT_ID('bronze.driver_monthly_metrics', 'U') IS NOT NULL DROP TABLE bronze.driver_monthly_metrics;
+-- IF OBJECT_ID('bronze.truck_utilization_metrics', 'U') IS NOT NULL DROP TABLE bronze.truck_utilization_metrics;
+-- IF OBJECT_ID('bronze.safety_incidents', 'U') IS NOT NULL DROP TABLE bronze.safety_incidents;
+-- IF OBJECT_ID('bronze.delivery_events', 'U') IS NOT NULL DROP TABLE bronze.delivery_events;
+-- IF OBJECT_ID('bronze.maintenance_records', 'U') IS NOT NULL DROP TABLE bronze.maintenance_records;
+-- IF OBJECT_ID('bronze.fuel_purchases', 'U') IS NOT NULL DROP TABLE bronze.fuel_purchases;
+-- IF OBJECT_ID('bronze.trips', 'U') IS NOT NULL DROP TABLE bronze.trips;
+-- IF OBJECT_ID('bronze.loads', 'U') IS NOT NULL DROP TABLE bronze.loads;
+-- IF OBJECT_ID('bronze.routes', 'U') IS NOT NULL DROP TABLE bronze.routes;
+-- IF OBJECT_ID('bronze.facilities', 'U') IS NOT NULL DROP TABLE bronze.facilities;
+-- IF OBJECT_ID('bronze.customers', 'U') IS NOT NULL DROP TABLE bronze.customers;
+-- IF OBJECT_ID('bronze.trailers', 'U') IS NOT NULL DROP TABLE bronze.trailers;
+-- IF OBJECT_ID('bronze.trucks', 'U') IS NOT NULL DROP TABLE bronze.trucks;
+-- IF OBJECT_ID('bronze.drivers', 'U') IS NOT NULL DROP TABLE bronze.drivers;
+-- GO
+
+-- -- 2. Drop the schema
+-- DROP SCHEMA IF EXISTS bronze;
+-- GO
+-- ================================================================================================
+
 -- Create a new table called 'drivers' in schema 'bronze'
 -- Drop the table if it already exists
 IF OBJECT_ID('bronze.drivers', 'U') IS NOT NULL
