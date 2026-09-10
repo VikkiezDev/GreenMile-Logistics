@@ -234,7 +234,7 @@ CREATE TABLE bronze.delivery_events
     scheduled_datetime DATETIME2,
     actual_datetime DATETIME2,
     detention_minutes INT,
-    on_time_flag BIT,
+    on_time_flag VARCHAR(10),
     location_city NVARCHAR(50),
     location_state CHAR(2)
 );
@@ -256,12 +256,12 @@ CREATE TABLE bronze.safety_incidents
     incident_type NVARCHAR(50),
     location_city NVARCHAR(50),
     location_state CHAR(2),
-    at_fault_flag BIT,
-    injury_flag BIT,
+    at_fault_flag VARCHAR(10),
+    injury_flag VARCHAR(10),
     vehicle_damage_cost DECIMAL(8,2),
     cargo_damage_cost DECIMAL(8,2),
     claim_amount DECIMAL(8,2),
-    preventable_flag BIT,
+    preventable_flag VARCHAR(10),
     description NVARCHAR(100)
 );
 GO
